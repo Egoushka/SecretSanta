@@ -149,22 +149,3 @@ async def list_command_handler(message: types.Message):
     participants_list = [f"@{user.telegram_username}" for user in participants]
     await message.answer(f"Participants in Secret Santa: {', '.join(participants_list)}")
     session.close()
-
-async def hello_handler(request):
-    return web.Response(text="Bot is running!")
-
-async def handle_startup():
-  """Handles bot startup"""
-  app = web.Application()
-  app.add_routes([web.get('/', hello_handler)])
-  runner = web.AppRunner(app)
-  await runner.setup()
-  site = web.TCPSite(runner, '0.0.0.0', 8080)
-  await site.start()
-  await dp.start_polling(bot)
-
-async def main():
-  await asyncio.gather(handle_startup())
-
-if __name__ == '__main__':
-    asyncio.run(main())
