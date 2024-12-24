@@ -26,6 +26,12 @@ async def command_start_handler(message: types.Message) -> None:
     await message.answer(f"Hello, {message.from_user.first_name}! \n\nPlease make sure to start a private chat with me first (by sending me /start), then click the button below to join the Secret Santa game.\n",
                          reply_markup=keyboard.as_markup())
 
+@dp.message(lambda message: message.chat.type == 'private')
+async def private_message_handler(message: types.Message):
+    session = Session()
+    set_user_has_private_chat(session, message.from_user.id)
+    session.close()
+    await message.answer("Thanks for starting a private chat with me.")
 
 @dp.callback_query(lambda c: c.data == 'join')
 async def join_callback_handler(query: types.CallbackQuery):
