@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Table, Boolean
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Table, Boolean, BigInteger
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.sql import select
@@ -37,7 +37,7 @@ class User(Base):
 class Group(Base):
     __tablename__ = 'groups'
     id = Column(Integer, primary_key=True)
-    telegram_id = Column(Integer, unique=True, nullable=False)
+    telegram_id = Column(BigInteger, unique=True, nullable=False)
     is_active = Column(Integer, default=1)
 
     participants = relationship(

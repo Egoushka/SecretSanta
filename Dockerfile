@@ -13,6 +13,8 @@ RUN pip install -r requirements.txt
 # Copy the project code into the container
 COPY . .
 
+RUN alembic upgrade head
+
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
