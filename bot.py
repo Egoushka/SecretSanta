@@ -1,5 +1,6 @@
 import asyncio
 import logging
+from typing import List
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart, Command
@@ -7,7 +8,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.enums import ParseMode
 from config import BOT_TOKEN
 import random
-from db import Session, create_user, get_user_by_telegram_id, create_group, get_group_by_telegram_id, add_user_to_group, get_group_participants, set_group_inactive, set_user_has_private_chat
+from db import Session, create_user, get_user_by_telegram_username, get_user_by_telegram_id, create_group, get_group_by_telegram_id, add_user_to_group, get_group_participants, set_group_inactive, set_user_has_private_chat
+from aiohttp import web
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
@@ -148,10 +150,21 @@ async def list_command_handler(message: types.Message):
     await message.answer(f"Participants in Secret Santa: {', '.join(participants_list)}")
     session.close()
 
+async def hello_handler(request):
+    return web.Response(text="Bot is running!")
 
+async def handle_startup():
+  """Handles bot startup"""
+  app = web.Application()
+  app.add_routes([web.get('/', hello_handler)])
+  runner = web.AppRunner(app)
+  await runner.setup()
+  site = web.TCPSite(runner, '0.0.0.0', 8080)
+  await site.start()
+  await dp.start_polling(bot)
 
 async def main():
-    await dp.start_polling(bot)
+  await asyncio.gather(handle_startup())
 
 if __name__ == '__main__':
     asyncio.run(main())
