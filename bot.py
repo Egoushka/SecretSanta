@@ -1,19 +1,14 @@
-import asyncio
 import logging
-from typing import List
 
-from aiogram import Bot, Dispatcher, types
+from aiogram import types
 from aiogram.filters import CommandStart, Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.enums import ParseMode
-from config import BOT_TOKEN
 import random
-from db import Session, create_user, get_user_by_telegram_username, get_user_by_telegram_id, create_group, get_group_by_telegram_id, add_user_to_group, get_group_participants, set_group_inactive, set_user_has_private_chat
-from aiohttp import web
+from db import Session, create_user, get_user_by_telegram_id, create_group, get_group_by_telegram_id, add_user_to_group, get_group_participants, set_group_inactive, set_user_has_private_chat
+from loader import bot, dp
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=BOT_TOKEN)
-dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def command_start_handler(message: types.Message) -> None:
@@ -146,6 +141,12 @@ async def list_command_handler(message: types.Message):
          await message.answer("No participants found in this Secret Santa game.")
          session.close()
          return
-    participants_list = [f"@{user.telegram_username}" for user in participants]
-    await message.answer(f"Participants in Secret Santa: {', '.join(participants_list)}")
+    participants_list = [
+        f"@{user.telegram_username}{' ✓' if user.has_private_chat else ''}"
+        for user in participants
+    ]
+    message_text = "Participants in Secret Santa:\n" + "\n".join(participants_list)
+    if any(not user.has_private_chat for user in participants):
+        message_text += "\n\nNote: Users without a ✓ need to start a private chat with the bot by sending /start."
+    await message.answer(message_text)
     session.close()

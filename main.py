@@ -5,6 +5,7 @@ import uvloop
 from aiogram.types import BotCommand, BotCommandScopeDefault
 from loguru import logger
 from loader import bot, dp
+import bot as handlers  # Registers handlers with the shared dispatcher.  # noqa: F401
 
 users_commands: dict[str, str] = {
     "start": "start"
