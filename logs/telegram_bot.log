@@ -1,0 +1,91 @@
+2025-12-27T16:35:01.779858+0200 | INFO | main:on_startup:23 | bot starting...
+2025-12-27T16:35:02.071393+0200 | INFO | main:on_startup:29 | Name     - Zibzia
+2025-12-27T16:35:02.071546+0200 | INFO | main:on_startup:30 | Username - @Zibziabot
+2025-12-27T16:35:02.071606+0200 | INFO | main:on_startup:31 | ID       - 1240090560
+2025-12-27T16:35:02.071653+0200 | INFO | main:on_startup:39 | Groups Mode  - Enabled
+2025-12-27T16:35:02.071695+0200 | INFO | main:on_startup:40 | Privacy Mode - Disabled
+2025-12-27T16:35:02.071733+0200 | INFO | main:on_startup:41 | Inline Mode  - Enabled
+2025-12-27T16:35:02.071770+0200 | INFO | main:on_startup:43 | bot started
+2025-12-27T16:37:14.610966+0200 | INFO | main:on_shutdown:47 | bot stopping...
+2025-12-27T16:37:14.862820+0200 | INFO | main:on_shutdown:54 | bot stopped
+2025-12-27T16:37:28.911732+0200 | INFO | main:on_startup:23 | bot starting...
+2025-12-27T16:37:29.133451+0200 | INFO | main:on_startup:29 | Name     - Zibzia
+2025-12-27T16:37:29.133617+0200 | INFO | main:on_startup:30 | Username - @Zibziabot
+2025-12-27T16:37:29.133677+0200 | INFO | main:on_startup:31 | ID       - 1240090560
+2025-12-27T16:37:29.133740+0200 | INFO | main:on_startup:39 | Groups Mode  - Enabled
+2025-12-27T16:37:29.133785+0200 | INFO | main:on_startup:40 | Privacy Mode - Disabled
+2025-12-27T16:37:29.133825+0200 | INFO | main:on_startup:41 | Inline Mode  - Enabled
+2025-12-27T16:37:29.133863+0200 | INFO | main:on_startup:43 | bot started
+2025-12-27T16:37:40.596623+0200 | INFO | main:on_shutdown:47 | bot stopping...
+2025-12-27T16:37:40.848115+0200 | INFO | main:on_shutdown:54 | bot stopped
+2025-12-27T16:39:32.739066+0200 | INFO | main:on_startup:23 | bot starting...
+2025-12-27T16:39:32.979052+0200 | INFO | main:on_startup:29 | Name     - Zibzia
+2025-12-27T16:39:32.979209+0200 | INFO | main:on_startup:30 | Username - @Zibziabot
+2025-12-27T16:39:32.979269+0200 | INFO | main:on_startup:31 | ID       - 1240090560
+2025-12-27T16:39:32.979317+0200 | INFO | main:on_startup:39 | Groups Mode  - Enabled
+2025-12-27T16:39:32.979362+0200 | INFO | main:on_startup:40 | Privacy Mode - Disabled
+2025-12-27T16:39:32.979401+0200 | INFO | main:on_startup:41 | Inline Mode  - Enabled
+2025-12-27T16:39:32.979438+0200 | INFO | main:on_startup:43 | bot started
+2025-12-27T16:39:55.969540+0200 | INFO | main:on_shutdown:47 | bot stopping...
+2025-12-27T16:39:56.221967+0200 | INFO | main:on_shutdown:54 | bot stopped
+2025-12-27T16:39:58.302548+0200 | INFO | main:on_startup:23 | bot starting...
+2025-12-27T16:40:00.951139+0200 | INFO | main:on_startup:29 | Name     - Zibzia
+2025-12-27T16:40:00.951800+0200 | INFO | main:on_startup:30 | Username - @Zibziabot
+2025-12-27T16:40:00.951923+0200 | INFO | main:on_startup:31 | ID       - 1240090560
+2025-12-27T16:40:00.952049+0200 | INFO | main:on_startup:39 | Groups Mode  - Enabled
+2025-12-27T16:40:00.952178+0200 | INFO | main:on_startup:40 | Privacy Mode - Disabled
+2025-12-27T16:40:00.952300+0200 | INFO | main:on_startup:41 | Inline Mode  - Enabled
+2025-12-27T16:40:00.952398+0200 | INFO | main:on_startup:43 | bot started
+2025-12-27T16:41:58.487087+0200 | INFO | main:on_shutdown:47 | bot stopping...
+2025-12-27T16:41:58.738751+0200 | INFO | main:on_shutdown:54 | bot stopped
+2025-12-27T16:42:01.744744+0200 | INFO | main:on_startup:24 | bot starting...
+2025-12-27T16:42:02.091483+0200 | INFO | main:on_startup:30 | Name     - Zibzia
+2025-12-27T16:42:02.092152+0200 | INFO | main:on_startup:31 | Username - @Zibziabot
+2025-12-27T16:42:02.092277+0200 | INFO | main:on_startup:32 | ID       - 1240090560
+2025-12-27T16:42:02.092393+0200 | INFO | main:on_startup:40 | Groups Mode  - Enabled
+2025-12-27T16:42:02.092512+0200 | INFO | main:on_startup:41 | Privacy Mode - Disabled
+2025-12-27T16:42:02.092617+0200 | INFO | main:on_startup:42 | Inline Mode  - Enabled
+2025-12-27T16:42:02.092729+0200 | INFO | main:on_startup:44 | bot started
+2025-12-27T16:52:18.898736+0200 | INFO | main:on_shutdown:48 | bot stopping...
+2025-12-27T16:52:19.152020+0200 | INFO | main:on_shutdown:55 | bot stopped
+2025-12-27T16:52:22.397210+0200 | INFO | main:on_startup:24 | bot starting...
+2025-12-27T16:52:22.585133+0200 | INFO | main:on_startup:30 | Name     - Zibzia
+2025-12-27T16:52:22.585415+0200 | INFO | main:on_startup:31 | Username - @Zibziabot
+2025-12-27T16:52:22.585517+0200 | INFO | main:on_startup:32 | ID       - 1240090560
+2025-12-27T16:52:22.585606+0200 | INFO | main:on_startup:40 | Groups Mode  - Enabled
+2025-12-27T16:52:22.585687+0200 | INFO | main:on_startup:41 | Privacy Mode - Disabled
+2025-12-27T16:52:22.585760+0200 | INFO | main:on_startup:42 | Inline Mode  - Enabled
+2025-12-27T16:52:22.585858+0200 | INFO | main:on_startup:44 | bot started
+2025-12-27T16:53:52.974944+0200 | INFO | main:on_shutdown:48 | bot stopping...
+2025-12-27T16:53:53.226851+0200 | INFO | main:on_shutdown:55 | bot stopped
+2025-12-27T16:53:56.744409+0200 | INFO | main:on_startup:24 | bot starting...
+2025-12-27T16:53:57.008192+0200 | INFO | main:on_startup:30 | Name     - Zibzia
+2025-12-27T16:53:57.008388+0200 | INFO | main:on_startup:31 | Username - @Zibziabot
+2025-12-27T16:53:57.008454+0200 | INFO | main:on_startup:32 | ID       - 1240090560
+2025-12-27T16:53:57.008508+0200 | INFO | main:on_startup:40 | Groups Mode  - Enabled
+2025-12-27T16:53:57.008558+0200 | INFO | main:on_startup:41 | Privacy Mode - Disabled
+2025-12-27T16:53:57.008602+0200 | INFO | main:on_startup:42 | Inline Mode  - Enabled
+2025-12-27T16:53:57.008643+0200 | INFO | main:on_startup:44 | bot started
+2025-12-28T00:36:35.119879+0200 | INFO | main:on_shutdown:48 | bot stopping...
+2025-12-28T00:36:35.373061+0200 | INFO | main:on_shutdown:55 | bot stopped
+2025-12-28T00:36:38.725970+0200 | INFO | main:on_startup:24 | bot starting...
+2025-12-28T00:36:39.488559+0200 | INFO | main:on_startup:30 | Name     - Zibzia
+2025-12-28T00:36:39.489237+0200 | INFO | main:on_startup:31 | Username - @Zibziabot
+2025-12-28T00:36:39.489580+0200 | INFO | main:on_startup:32 | ID       - 1240090560
+2025-12-28T00:36:39.489782+0200 | INFO | main:on_startup:40 | Groups Mode  - Enabled
+2025-12-28T00:36:39.489899+0200 | INFO | main:on_startup:41 | Privacy Mode - Disabled
+2025-12-28T00:36:39.489997+0200 | INFO | main:on_startup:42 | Inline Mode  - Enabled
+2025-12-28T00:36:39.490091+0200 | INFO | main:on_startup:44 | bot started
+2025-12-28T13:51:57.253635+0200 | INFO | main:on_shutdown:48 | bot stopping...
+2025-12-28T13:51:57.506367+0200 | INFO | main:on_shutdown:55 | bot stopped
+2025-12-28T13:52:00.265299+0200 | INFO | main:on_startup:24 | bot starting...
+2025-12-28T13:53:05.567501+0200 | INFO | main:on_startup:24 | bot starting...
+2025-12-28T13:53:05.995769+0200 | INFO | main:on_startup:30 | Name     - Zibzia
+2025-12-28T13:53:05.996263+0200 | INFO | main:on_startup:31 | Username - @Zibziabot
+2025-12-28T13:53:05.996362+0200 | INFO | main:on_startup:32 | ID       - 1240090560
+2025-12-28T13:53:05.996450+0200 | INFO | main:on_startup:40 | Groups Mode  - Enabled
+2025-12-28T13:53:05.996542+0200 | INFO | main:on_startup:41 | Privacy Mode - Disabled
+2025-12-28T13:53:05.996624+0200 | INFO | main:on_startup:42 | Inline Mode  - Enabled
+2025-12-28T13:53:05.996701+0200 | INFO | main:on_startup:44 | bot started
+2025-12-28T16:41:44.479964+0200 | INFO | main:on_shutdown:48 | bot stopping...
+2025-12-28T16:41:44.733162+0200 | INFO | main:on_shutdown:55 | bot stopped

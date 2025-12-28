@@ -1,20 +1,21 @@
-# Use an official Python runtime as a parent image
-FROM python:3.13-slim
+FROM python:3.12-slim
 
-# Set the working directory in the container
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
 WORKDIR /app
 
-# Copy the requirements file into the container
+RUN addgroup --system app && adduser --system --ingroup app app
+
 COPY requirements.txt .
 
-# Install any dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the project code into the container
 COPY . .
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+USER app
 
-# Define the command to run your bot
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+  CMD python -c "import os,signal; os.kill(1,0)"
+
 CMD ["python", "main.py"]
